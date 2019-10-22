@@ -1,22 +1,22 @@
 
-一、新建分支
-1）clone远程仓库
+### 一、新建分支
+#### 1） clone远程仓库
 git clone 服务器地址
-2）新建+切换分支
+#### 2）新建+切换分支
 git checkout -b hotfix
 等于 git branch hotfix + git checkout hotfix
-3）切换分支
+#### 3）切换分支
 git checkout hotfix
-4）推送指定分支（不追踪）
+#### 4）推送指定分支（不追踪）
 git push origin hotfix
-4）推送当前分支并追踪
+#### 5）推送当前分支并追踪
 git push --set-upstream origin HEAD
-5）查看本地分支和远程分支关系 
+#### 6）查看本地分支和远程分支关系 
 git branch       （本地分支）
 git branch -vv   （带关系）
 git branch -a    （带远程分支）
 
-二、跟踪已有远程分支(4种方法，任选其一)
+### 二、跟踪已有远程分支(4种方法，任选其一)
 1）git checkout -b branch-name origin/develop
 在远程分支的基础上建立分支，并且追踪origin/branch-name远程分支。
 2) git branch --set-upstream branch-name origin/branch-name
@@ -26,7 +26,7 @@ git branch -a    （带远程分支）
 4）git clone -b branch-name 服务器地址
 自动将创建好的branch-name分支追踪origin/branch-name分支
 
-三、提交代码
+### 三、提交代码
 1）查看是否本地有修改
 git diff
 git status -s 
@@ -44,7 +44,7 @@ git rebase -i master
 git checkout master
 git push
 
-四、同步代码
+### 四、同步代码
 1）拉取到本地仓库
 git fetch 
 等于 git fetch origin branch-name
